@@ -29,6 +29,10 @@ p {
   letter-spacing: 0.32px;
 }
 
+body {
+  background-color: $_body_bg_color;
+}
+
 .container {
   position: relative;
   max-width: 288px;
