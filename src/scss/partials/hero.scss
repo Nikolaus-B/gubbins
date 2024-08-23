@@ -1,0 +1,81 @@
+.hero-wrapper {
+  position: relative;
+  background-color: $_main_bg_color;
+  width: 288px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: 1440px) {
+    & {
+      border-left: 1px solid $_main_color;
+      border-right: 1px solid $_main_color;
+      width: 1232px;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 104px;
+      padding-right: 32px;
+    }
+  }
+  .hero-title {
+    margin-bottom: 8px;
+    @media (min-width: 1440px) {
+      & {
+        margin-bottom: 16px;
+        padding-top: 48px;
+      }
+    }
+  }
+  .text-content {
+    width: 288px;
+    margin-bottom: 16px;
+    @media (min-width: 1440px) {
+      & {
+        width: 400px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .google-btn {
+    margin-bottom: 32px;
+    width: 216px;
+    height: 64px;
+    border-radius: 8px;
+    @media (min-width: 1440px) {
+      & {
+        width: 297px;
+        height: 88px;
+      }
+    }
+    & img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .scrin {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 12px;
+    padding-left: 32px;
+    align-items: flex-end;
+    @media (min-width: 1440px) {
+      & {
+        column-gap: 28px;
+        padding-left: 0;
+      }
+      & svg {
+        width: 148px;
+        height: 69px;
+      }
+    }
+    .phone {
+      width: 148px;
+      @media (min-width: 1440px) {
+        & {
+          width: 296px;
+        }
+      }
+    }
+  }
+}
