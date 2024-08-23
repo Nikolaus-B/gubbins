@@ -7,13 +7,124 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/vanilla-vite-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-vite-template/assets/index-9051d831.css">
+    <link rel="stylesheet" href="/vanilla-vite-template/assets/index-425c9f2e.css">
   </head>
   <body>
-    <header class="header">Header</header>
+    <header class="header">
+  <div class="wrapper">
+    <div class="header-container">
+      <div class="logo-container">
+        <div class="logo">
+          <a href="#hero">
+            <img src="../img/gubbins_logo.jpg" alt="logo" />
+          </a>
+        </div>
+        <div class="slogan">
+          GUBBINS - it`s a <br />
+          word game
+        </div>
+      </div>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="#reviews">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Benefits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Advantages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">FAQ</a>
+        </li>
+      </ul>
+      <div class="menu">
+        <button class="open-btn">
+          <svg class="menu-icon" width="16" height="14">
+            <use href="../img/burger.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="back-drop">
+      <button class="close-btn">
+        <svg class="close-icon" width="24" height="24">
+          <use href="../img/close.svg#close_icon"></use>
+        </svg>
+      </button>
+      <ul class="nav-mobile-list">
+        <li class="nav-item">
+          <a class="nav-link" href="">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Benefits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Advantages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
 
 
-    <section>Reviews</section>
+    <section class="hero" id="hero">
+  <div class="hero-wrapper">
+    <div class="descriptions">
+      <h1 class="hero-title">GUBBINS</h1>
+      <div class="text-content">
+        <p>
+          Dive into the quirky world of Gubbins, where strategy meets fun in a
+          colorful puzzle adventure! Challenge your mind, conquer levels, and
+          outsmart the competition in this captivating puzzle saga.
+        </p>
+      </div>
+      <div class="google-btn">
+        <a href="">
+          <img src="../img/google-btn.png" alt="button" />
+        </a>
+      </div>
+    </div>
+    <div class="scrin">
+      <div class="phone">
+        <img src="../img/mockup-big.png" alt="phone" />
+      </div>
+      <svg class="animal" width="72" height="34">
+        <use href="../img/animal.svg#icon-animal"></use>
+      </svg>
+    </div>
+  </div>
+</section>
+
+
+    <section class="reviews-section" id="reviews">
+  <div class="reviews-wrapper">
+    <h2 class="reviews-title">Reviews</h2>
+    <div class="slide"></div>
+    <div class="reviews-btn">
+      <button class="arrow-btn" type="button">
+        <svg class="arrow-icon" width="44" height="14">
+          <use href="../img/arrow-max.svg#icon-arrow-max"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
 
 
     <section>About</section>
