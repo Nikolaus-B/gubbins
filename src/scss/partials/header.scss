@@ -30,6 +30,7 @@
         flex-grow: 1;
         @media (min-width: 1440px) {
           & {
+            border-bottom-left-radius: 0;
             border-bottom: none;
             border-right: none;
           }
@@ -92,6 +93,7 @@
 .back-drop {
   display: block;
   position: relative;
+  z-index: 10;
   width: 100%;
   top: -950%;
   left: 0;
