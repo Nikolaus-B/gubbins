@@ -9,7 +9,7 @@
 @import './partials/footer.scss';
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Catamaran', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -18,8 +18,28 @@
   background-color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
+
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+p {
+  letter-spacing: 0.32px;
+}
+
+.container {
+  position: relative;
+  max-width: 288px;
+  margin: 0 16px;
+
+  @media screen and (min-width: 320px) {
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1232px;
+    margin: 0 auto;
+  }
 }
