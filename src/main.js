@@ -1,5 +1,5 @@
 const openMenu = document.querySelector('.open-btn');
-// const header = document.querySelector('.header-container');
+const clickOnModal = document.querySelector('.nav-mobile-list');
 const menuBackDrop = document.querySelector('.back-drop');
 const closeMenu = document.querySelector('.close-btn');
 const modal = document.querySelector('.modal-wrapper');
@@ -17,3 +17,5 @@ const closeModal = () => {
 openMenu.addEventListener('click', openModal);
 
 closeMenu.addEventListener('click', closeModal);
+
+clickOnModal.addEventListener('click', closeModal);
