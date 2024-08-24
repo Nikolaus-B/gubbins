@@ -1,3 +1,4 @@
+import './scss/styles.scss';
 const openMenu = document.querySelector('.open-btn');
 const clickOnModal = document.querySelector('.nav-mobile-list');
 const menuBackDrop = document.querySelector('.back-drop');
