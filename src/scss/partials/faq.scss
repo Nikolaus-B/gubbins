@@ -153,21 +153,10 @@
     }
   }
 
-  .faq-item-content {
-    visibility: visible;
-    opacity: 1;
-  }
   .faq-item-content-text {
     animation: revealText 1s forwards;
     animation-delay: 0.5s;
   }
-}
-
-.faq-item-content {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-  overflow: hidden;
 }
 
 .faq-item-content-text {
@@ -214,5 +203,5 @@
   left: -19px;
 
   width: 19px;
-  height: 100%; /* Виставити висоту, щоб відповідати висоті батьківського елемента */
+  height: 100%;
 }

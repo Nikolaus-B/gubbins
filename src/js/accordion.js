@@ -2,10 +2,8 @@ document.querySelectorAll('.faq-item').forEach(function (item) {
   item
     .querySelector('.faq-item-icon-container')
     .addEventListener('click', function () {
-      // Отримати всі елементи .faq-item
       const allItems = document.querySelectorAll('.faq-item');
 
-      // Якщо натиснутий елемент вже відкритий, нічого не робити
       if (item.classList.contains('open')) {
         item.classList.remove('open');
         item
