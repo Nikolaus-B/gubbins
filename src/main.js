@@ -1,4 +1,5 @@
 import './scss/styles.scss';
+import './js/accordion.js';
 const openMenu = document.querySelector('.open-btn');
 const clickOnModal = document.querySelector('.nav-mobile-list');
 const menuBackDrop = document.querySelector('.back-drop');
