@@ -22,7 +22,6 @@ export default defineConfig(({ command }) => {
               return 'vendor';
             }
           },
-          entryFileNames: 'commonHelpers.js',
         },
       },
       outDir: '../dist',
@@ -53,6 +52,6 @@ export default defineConfig(({ command }) => {
         },
       },
     },
-    base: '/vanilla-vite-template'
+    base: '/gubbins/',
   };
 });
