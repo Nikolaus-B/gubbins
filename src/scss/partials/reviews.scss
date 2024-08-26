@@ -125,6 +125,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    // @media (min-width: 1440px) {
+    //   & {
+    //     position: relative;
+    //     left: 500px;
+    //     bottom: 100px;
+    //   }
+    // }
     .arrow-btn {
       border: none;
       background-color: inherit;
@@ -145,6 +152,9 @@
       & {
         width: 88px;
         height: 88px;
+        position: relative;
+        // left: 500px;
+        // bottom: 100px;
       }
     }
   }
