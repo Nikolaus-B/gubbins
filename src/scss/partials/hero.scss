@@ -148,6 +148,10 @@
       height: 100%;
     }
   }
+  .google-btn:active,
+  .google-btn:hover {
+    box-shadow: 4px 4px 0px 0px $_primary_greey_color;
+  }
   .scrin {
     display: flex;
     justify-content: space-between;

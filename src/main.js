@@ -11,7 +11,9 @@ const nextSlide = document.querySelector('.arrow-btn');
 const slider = document.querySelector('.slider-wrapper');
 const sliderItems = document.querySelectorAll('.slider-item');
 const countSlides = sliderItems.length;
+const lineSlider = document.querySelector('.line-slider-wrapper');
 let currentIndex = 0;
+let currentCloud = 0;
 
 const openModal = () => {
   modal.style.display = 'block';
@@ -41,9 +43,63 @@ slider.prepend(thirdClone);
 
 const allSliderItems = document.querySelectorAll('.slider-item');
 
-const slideCount = allSliderItems.length;
+let slideCount = allSliderItems.length;
 
 slider.style.transform = `translateY(-${(slideCount - 3) * 176}px)`;
+
+const lineSliderItems = document.querySelectorAll('.line-slider-item');
+const maxIndex = lineSliderItems.length;
+
+const firstCloneCloud = lineSliderItems[0].cloneNode(true);
+const secondCloneCloud = lineSliderItems[1].cloneNode(true);
+const thirdCloneCloud = lineSliderItems[2].cloneNode(true);
+
+lineSlider.append(firstCloneCloud);
+lineSlider.append(secondCloneCloud);
+lineSlider.append(thirdCloneCloud);
+const newSliderItems = document.querySelectorAll('.line-slider-item');
+const countCloud = newSliderItems.length;
+
+lineSliderItems[0].classList.add('right-cloud');
+lineSliderItems[1].classList.add('center-cloud');
+lineSliderItems[2].classList.add('left-cloud');
+
+function cloudMove() {
+  if (currentCloud === maxIndex) {
+    currentCloud = 0;
+    newSliderItems[0].classList.add('right-cloud');
+    newSliderItems[1].classList.add('center-cloud');
+    newSliderItems[2].classList.add('left-cloud');
+    newSliderItems[countCloud - 2].classList.remove('left-cloud');
+    newSliderItems[countCloud - 3].classList.remove('center-cloud');
+    newSliderItems[countCloud - 4].classList.remove('right-cloud');
+  }
+
+  if (newSliderItems[currentCloud].previousElementSibling) {
+    newSliderItems[currentCloud].previousElementSibling.classList.remove(
+      'right-cloud'
+    );
+  }
+
+  newSliderItems[currentCloud].classList.replace('center-cloud', 'right-cloud');
+
+  if (lineSliderItems[currentCloud].nextElementSibling) {
+    newSliderItems[currentCloud].nextElementSibling.classList.replace(
+      'left-cloud',
+      'center-cloud'
+    );
+  }
+
+  if (newSliderItems[currentCloud + 1].nextElementSibling) {
+    newSliderItems[currentCloud + 1].nextElementSibling.classList.add(
+      'left-cloud'
+    );
+  }
+}
+
+window.addEventListener('resize', function () {
+  this.location.reload();
+});
 
 function sliderMove() {
   slider.style.transition = 'transform 0.5s ease-in-out';
@@ -61,10 +117,22 @@ function sliderMove() {
 
 const moveToNextSlide = () => {
   currentIndex++;
-  sliderMove();
+  currentCloud++;
+
+  if (window.innerWidth < 1439) {
+    sliderMove();
+  } else {
+    cloudMove();
+  }
 };
 
 allSliderItems.forEach(item => {
+  item.addEventListener('click', function () {
+    this.classList.toggle('text-active');
+  });
+});
+
+newSliderItems.forEach(item => {
   item.addEventListener('click', function () {
     this.classList.toggle('text-active');
   });
