@@ -10,8 +10,8 @@
       rel="stylesheet"
     />
     
-    <script type="module" crossorigin src="/gubbins/assets/index-03c46d1a.js"></script>
-    <link rel="stylesheet" href="/gubbins/assets/index-27351281.css">
+    <script type="module" crossorigin src="/gubbins/assets/index-49497e91.js"></script>
+    <link rel="stylesheet" href="/gubbins/assets/index-e4c4febe.css">
   </head>
   <body>
     <header class="header">
@@ -20,7 +20,17 @@
       <div class="logo-container">
         <div class="logo">
           <a href="#hero">
-            <img src="/gubbins/assets/gubbins_logo-a38f3efd.jpg" alt="logo" />
+            <picture>
+              <source
+                srcset="/gubbins/assets/logo-desctop-99b51b08.png 1x, /gubbins/assets/logo-desctop-2x-430d4aca.png 2x"
+                media="(min-width: 1439px)"
+              />
+              <source
+                srcset="/gubbins/assets/logo-mobile-35013ee6.png 1x, /gubbins/assets/logo-mobile-2x-7f72f2e5.png 2x"
+                media="(max-width: 1438px)"
+              />
+              <img src="/gubbins/assets/logo-desctop-99b51b08.png" alt="logo" />
+            </picture>
           </a>
         </div>
         <div class="slogan">
@@ -51,7 +61,7 @@
       <div class="menu">
         <button class="open-btn">
           <svg class="menu-icon" width="16" height="14">
-            <use href="/gubbins/assets/burger-89d44b93.svg#icon-Vector"></use>
+            <use href="/gubbins/assets/sprite-a11331b2.svg#icon-Vector"></use>
           </svg>
         </button>
       </div>
@@ -60,7 +70,7 @@
     <div class="back-drop">
       <button class="close-btn">
         <svg class="close-icon" width="24" height="24">
-          <use href="/gubbins/assets/close-c68848aa.svg#close_icon"></use>
+          <use href="/gubbins/assets/sprite-a11331b2.svg#close_icon"></use>
         </svg>
       </button>
       <ul class="nav-mobile-list">
@@ -102,20 +112,49 @@
         <a
           href="https://play.google.com/store/apps/deteils?id=com.zerologicgames.findaway"
         >
-          <img src="/gubbins/assets/google-btn-29629ec9.png" alt="button" />
+          <!-- <img src="./img/hero/google-btn.png" alt="button" /> -->
+          <picture>
+            <source
+              srcset="/gubbins/assets/google-btn-29629ec9.png 1x, /gubbins/assets/google-btn-2x-0e71008a.png 2x"
+              media="(min-width: 1439px)"
+            />
+            <source
+              srcset="/gubbins/assets/google-btn-mobile-12473791.png 1x, /gubbins/assets/google-btn-mobile-2x-4d00e0dd.png 2x"
+              media="(max-width: 1438px)"
+            />
+            <img src="/gubbins/assets/google-btn-29629ec9.png" alt="logo" />
+          </picture>
         </a>
       </div>
     </div>
     <div class="scrin">
       <div class="phone">
-        <img src="/gubbins/assets/mockup-big-9070e6c7.png" alt="phone" />
+        <!-- <img src="./img/hero/mockup.png" alt="phone" /> -->
+        <picture>
+          <source
+            srcset="/gubbins/assets/mockup-9070e6c7.png 1x, /gubbins/assets/mockup-2x-b0aa6916.png 2x"
+            media="(min-width: 1439px)"
+          />
+          <source
+            srcset="/gubbins/assets/mockup-mobile-d0322fb5.png 1x, /gubbins/assets/mockup-mobile-2x-af957c9d.png 2x"
+            media="(max-width: 1438px)"
+          />
+          <img src="/gubbins/assets/mockup-9070e6c7.png" alt="logo" />
+        </picture>
       </div>
       <svg class="animal" width="72" height="34">
-        <use href="/gubbins/assets/animal-a1c0707d.svg#icon-animal"></use>
+        <use href="/gubbins/assets/sprite-a11331b2.svg#icon-animal"></use>
       </svg>
     </div>
     <div class="hand-photo">
-      <img src="/gubbins/assets/hand-346770b4.png" alt="hand" />
+      <!-- <img src="./img/hero/hand.png" alt="hand" /> -->
+      <picture>
+        <source
+          srcset="/gubbins/assets/hand-346770b4.png 1x, /gubbins/assets/hand-2x-7ca26cd0.png 2x"
+          media="(min-width: 1439px)"
+        />
+        <img src="/gubbins/assets/hand-346770b4.png" alt="logo" />
+      </picture>
     </div>
   </div>
 </section>
@@ -124,24 +163,64 @@
     <section class="reviews-section" id="reviews">
   <div class="reviews-wrapper">
     <div class="white-box"></div>
-    <h2 class="reviews-title">Reviews</h2>
-    <div class="slide">
-      <ul>
-        <li>
-          <img src="/gubbins/assets/cloud-green-452886ec.png" alt="cloud" />
+    <div class="title-wrapper">
+      <h2 class="reviews-title">Reviews</h2>
+      <svg class="title-effect" width="56" height="104">
+        <use href="/gubbins/assets/sprite-a11331b2.svg#icon-title-effect"></use>
+      </svg>
+    </div>
+
+    <div class="slider">
+      <ul class="slider-wrapper">
+        <li class="slide-1 slider-item">
+          <h4 class="cloud-title">PuzzleLover101</h4>
+          <p class="cloud-content">
+            &#34;Absolutely addictive! Every level feels fresh and the
+            characters are just adorable.&#34;
+          </p>
         </li>
-        <li>
-          <img src="/gubbins/assets/cloud-3-7c4ff7c9.png" alt="cloud" />
+        <li class="slide-2 slider-item">
+          <h4 class="cloud-title">StrategistSam</h4>
+          <p class="cloud-content">
+            &#34;Great challenge, never boring. It&#39;s my go-to game during
+            commutes.&#34;
+          </p>
         </li>
-        <li>
-          <img src="/gubbins/assets/cloud-4-155c660d.png" alt="cloud" />
+        <li class="slide-3 slider-item">
+          <h4 class="cloud-title">ColorfulCassie</h4>
+          <p class="cloud-content">
+            &#34;The graphics are so lively and cheerful, really brightens my
+            day!&#34;
+          </p>
+        </li>
+        <li class="slide-4 slider-item">
+          <h4 class="cloud-title">BrainyBert</h4>
+          <p class="cloud-content">
+            &#34;"Perfect balance between challenging and fun. It&#39;s hard to
+            put down.&#34;
+          </p>
+        </li>
+        <li class="slide-5 slider-item">
+          <h4 class="cloud-title">MultiplayerMax</h4>
+          <p class="cloud-content">
+            &#34;Love competing with my friends. The leaderboard makes it even
+            more thrilling.&#34;
+          </p>
+        </li>
+        <li class="slide-6 slider-item">
+          <h4 class="cloud-title">HappyGamer</h4>
+          <p class="cloud-content">
+            &#34;Support team was quick to respond when I needed help. Great
+            service!&#34;
+          </p>
         </li>
       </ul>
     </div>
+    <p></p>
     <div class="reviews-btn">
       <button class="arrow-btn" type="button">
         <svg class="arrow-icon" width="44" height="14">
-          <use href="/gubbins/assets/arrow-max-38fa5d34.svg#icon-arrow-max"></use>
+          <use href="/gubbins/assets/sprite-a11331b2.svg#icon-arrow-max"></use>
         </svg>
       </button>
     </div>
