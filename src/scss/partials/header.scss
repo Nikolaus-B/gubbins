@@ -2,8 +2,12 @@
   position: relative;
   background-color: $_main_bg_color;
   padding-top: 16px;
+  display: flex;
+  justify-content: center;
   .wrapper {
-    position: relative;
+    position: fixed;
+    z-index: 7;
+    // position: relative;
     width: 288px;
     height: 60px;
     margin-left: auto;
@@ -14,11 +18,11 @@
       }
     }
     .header-container {
-      position: relative;
+      background-color: rgba(255, 255, 255, 1);
       width: 100%;
       margin-left: auto;
       margin-right: auto;
-      margin-right: 100px;
+      // margin-right: 100px;
       display: flex;
       justify-content: space-between;
       height: 60px;
@@ -60,7 +64,10 @@
             column-gap: 8px;
             align-items: center;
             .nav-item {
-              padding: 28px 32px;
+              padding: 14px 32px;
+            }
+            .nav-item:hover {
+              box-shadow: 4px 4px 0px #e2db4f;
             }
           }
         }
@@ -109,10 +116,15 @@
   width: 288px;
   margin-left: auto;
   margin-right: auto;
-  top: -950%;
-  left: 0;
+  top: -500%;
+  right: -50%;
   background-color: #f5f0f5;
-  transition: all 0.8s ease 0s;
+  transition: all 0.5s ease 0s;
+  // ------------------------------
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  // ------------------------------
   .close-btn {
     position: absolute;
     top: 16px;
@@ -138,4 +150,12 @@
 
 .active {
   top: -60px;
+  right: 0;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+body.lock {
+  overflow: hidden;
 }
