@@ -1,9 +1,0 @@
-<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs>
-<symbol id="icon-btn_next-max" viewBox="0 0 32 32">
-<path fill="#eff0eb" style="fill: var(--color1, #eff0eb)" d="M16 0.182c8.736 0 15.818 7.082 15.818 15.818s-7.082 15.818-15.818 15.818c-8.736 0-15.818-7.082-15.818-15.818s7.082-15.818 15.818-15.818z"></path>
-<path fill="none" stroke="#4a4a4a" style="stroke: var(--color2, #4a4a4a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.3636" d="M16 0.182c8.736 0 15.818 7.082 15.818 15.818s-7.082 15.818-15.818 15.818c-8.736 0-15.818-7.082-15.818-15.818s7.082-15.818 15.818-15.818z"></path>
-<path fill="none" stroke="#111211" style="stroke: var(--color3, #111211)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.3636" d="M5.818 19.273c0.754-0.112 1.514-0.386 2.258-0.556 2-0.456 3.971-1.035 5.929-1.658 1.71-0.544 3.365-1.236 5.109-1.668 2.166-0.537 4.381-0.565 6.563-0.93M21.13 12.727c1.182 0.065 2.305 0.475 3.475 0.556 1.484 0.103 2.933-0.39 4.423-0.364 0.234 0.004-0.257 0.278-0.314 0.337-0.612 0.635-1.147 1.356-1.748 2.005-1.092 1.182-2.338 2.076-3.516 3.144"></path>
-</symbol>
-</defs>
-</svg>

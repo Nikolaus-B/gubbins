@@ -4,7 +4,23 @@
       <div class="logo-container">
         <div class="logo">
           <a href="#hero">
-            <img src="./img/gubbins_logo.jpg" alt="logo" />
+            <picture>
+              <source
+                srcset="
+                  ./img/header/logo-desctop.png    1x,
+                  ./img/header/logo-desctop-2x.png 2x
+                "
+                media="(min-width: 1439px)"
+              />
+              <source
+                srcset="
+                  ./img/header/logo-mobile.png    1x,
+                  ./img/header/logo-mobile-2x.png 2x
+                "
+                media="(max-width: 1438px)"
+              />
+              <img src="./img/header/logo-desctop.png" alt="logo" />
+            </picture>
           </a>
         </div>
         <div class="slogan">
@@ -35,7 +51,7 @@
       <div class="menu">
         <button class="open-btn">
           <svg class="menu-icon" width="16" height="14">
-            <use href="/img/burger.svg#icon-Vector"></use>
+            <use href="./img/sprite.svg#icon-Vector"></use>
           </svg>
         </button>
       </div>
@@ -44,7 +60,7 @@
     <div class="back-drop">
       <button class="close-btn">
         <svg class="close-icon" width="24" height="24">
-          <use href="/img/close.svg#close_icon"></use>
+          <use href="./img/sprite.svg#close_icon"></use>
         </svg>
       </button>
       <ul class="nav-mobile-list">
