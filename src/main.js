@@ -15,6 +15,29 @@ const lineSlider = document.querySelector('.line-slider-wrapper');
 let currentIndex = 0;
 let currentCloud = 0;
 
+// =========================================================================
+const galleryItems = document.querySelectorAll('.gallery-item');
+const galleryButtons = document.querySelector('.gallery-buttons');
+const galleryBtn = document.querySelectorAll('.gallery-btn');
+const galleryItemsIndex = galleryItems.length;
+const gallerybuttonsIndex = galleryBtn.length;
+
+galleryButtons.addEventListener('click', event => {
+  const target = event.target;
+
+  if (target.tagName === 'LI') {
+    const btnIndex = Array.prototype.indexOf.call(
+      galleryButtons.children,
+      target
+    );
+    galleryItems.forEach(item => {
+      item.classList.remove('gallery-active');
+    });
+    galleryItems[btnIndex].classList.add('gallery-active');
+  }
+});
+// =============================================================================
+
 const openModal = () => {
   modal.style.display = 'block';
   menuBackDrop.classList.add('active');

@@ -13,58 +13,8 @@
   @media (min-width: 1440px) {
     & {
       width: 1232px;
-      border-left: 1px solid $_main_color;
-      border-right: 1px solid $_main_color;
-      // padding-top: 104px;
-      // padding-bottom: 104px;
       padding-top: 164px;
       padding-bottom: 44px;
-    }
-    &::before {
-      content: '';
-      position: absolute;
-      z-index: 5;
-      top: 0;
-      right: 0;
-      width: 315px;
-      height: 100%;
-      background-image: url('./../img/reviews/line_right.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    &::after {
-      content: '';
-      position: absolute;
-      z-index: 5;
-      top: 0;
-      left: -32px;
-      width: 32px;
-      height: 100%;
-      background-image: url('./../img/reviews/line_left.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    .white-box {
-      position: relative;
-      width: 1232px;
-    }
-    .white-box::before {
-      content: '';
-      position: absolute;
-      top: 220px;
-      left: -1px;
-      width: 3px;
-      height: 101px;
-      background-color: $_body_bg_color;
-    }
-    .white-box::after {
-      content: '';
-      position: absolute;
-      top: -140px;
-      right: -1px;
-      width: 3px;
-      height: 294px;
-      background-color: $_body_bg_color;
     }
   }
   .title-wrapper {
@@ -164,6 +114,33 @@
       stroke-width: 5px;
     }
   }
+}
+.reviews-left-line {
+  @media screen and (max-width: 1439px) {
+    display: none;
+  }
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -18px;
+
+  width: 19px;
+  height: 100%;
+}
+
+.reviews-right-line {
+  @media screen and (max-width: 1439px) {
+    display: none;
+  }
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+
+  width: 315px;
+  height: 100%;
 }
 
 // -------------------------------------
