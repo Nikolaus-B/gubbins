@@ -1,3 +1,6 @@
+import questionMark from '../img/faq/question-mark.png';
+import cross from '../img/faq/cross.png';
+
 document.querySelectorAll('.faq-item').forEach(function (item) {
   item
     .querySelector('.faq-item-icon-container')
@@ -9,8 +12,7 @@ document.querySelectorAll('.faq-item').forEach(function (item) {
         item
           .querySelector('.faq-item-content')
           .classList.add('visually-hidden');
-        item.querySelector('.faq-item-image').src =
-          './img/faq/question-mark.png';
+        item.querySelector('.faq-item-image').src = questionMark;
         return;
       }
 
@@ -20,15 +22,16 @@ document.querySelectorAll('.faq-item').forEach(function (item) {
           otherItem
             .querySelector('.faq-item-content')
             .classList.add('visually-hidden');
-          otherItem.querySelector('.faq-item-image').src =
-            './img/faq/question-mark.png';
+          otherItem.querySelector('.faq-item-image').src = questionMark;
         }
       });
 
       item.classList.add('open');
-      item
-        .querySelector('.faq-item-content')
-        .classList.remove('visually-hidden');
-      item.querySelector('.faq-item-image').src = './img/faq/cross.png';
+      item.querySelector('.faq-item-image').src = cross;
+      setTimeout(() => {
+        item
+          .querySelector('.faq-item-content')
+          .classList.remove('visually-hidden');
+      }, 200);
     });
 });

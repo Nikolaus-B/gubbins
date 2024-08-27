@@ -63,15 +63,30 @@
 
 .about-content-item-with-title {
   position: relative;
+  overflow: hidden;
+
+  box-sizing: border-box;
   padding: 116px 24px 24px;
   z-index: 9;
-
-  background-color: white;
+  border: 1px solid $_primary_greey_color;
 
   @media screen and (min-width: 1440px) {
     width: 504px;
-
+    border-left: 0px;
     padding: 181px 48px 48px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 100%;
+    background-image: url('../img/about/title-section-bg.png');
+    background-size: cover;
+    background-position: center right;
+    z-index: -1;
   }
 }
 
@@ -123,9 +138,6 @@
 
     margin-top: 35px;
   }
-}
-
-.about-content-item {
 }
 
 .crossword-image {
