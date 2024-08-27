@@ -26,7 +26,13 @@
     justify-content: center;
     align-items: center;
     .reviews-title {
-      font-size: 72px;
+      font-family: 'Margarine';
+      font-size: 64px;
+      line-height: 72px;
+      @media (min-width: 1440px) {
+        font-size: 80px;
+        line-height: 104px;
+      }
     }
     .title-effect {
       position: absolute;
@@ -53,21 +59,8 @@
       }
     }
   }
-  // .slider {
-  // width: 288px;
-  // height: 512px;
-  // background-color: inherit;
-  // margin-bottom: 40px;
-  // @media (min-width: 1440px) {
-  //   & {
-  //     border: 1px solid #000;
-  //     width: 1010px;
-  //     margin-left: 4px;
-  //     margin-right: auto;
-  //   }
-  // }
-  // }
   .reviews-btn {
+    position: relative;
     width: 56px;
     height: 56px;
     border: 1px solid $_main_color;
@@ -75,13 +68,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // @media (min-width: 1440px) {
-    //   & {
-    //     position: relative;
-    //     left: 500px;
-    //     bottom: 100px;
-    //   }
-    // }
+    transition: transform 0.5s ease-in-out;
+    z-index: 7;
+    @media (min-width: 1440px) {
+      & {
+        width: 88px;
+        height: 88px;
+        left: 500px;
+        bottom: 100px;
+      }
+    }
     .arrow-btn {
       border: none;
       background-color: inherit;
@@ -98,18 +94,9 @@
         }
       }
     }
-    @media (min-width: 1440px) {
-      & {
-        width: 88px;
-        height: 88px;
-        position: relative;
-        // left: 500px;
-        // bottom: 100px;
-      }
-    }
   }
   .reviews-btn:hover {
-    box-shadow: 4px 4px 0px #000;
+    box-shadow: 4px 4px 0px 0px #000;
     .arrow-icon:hover {
       stroke-width: 5px;
     }
