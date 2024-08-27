@@ -32,6 +32,6 @@ document.querySelectorAll('.faq-item').forEach(function (item) {
         item
           .querySelector('.faq-item-content')
           .classList.remove('visually-hidden');
-      }, 100);
+      }, 200);
     });
 });
