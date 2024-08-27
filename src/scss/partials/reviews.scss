@@ -51,20 +51,20 @@
     .white-box::before {
       content: '';
       position: absolute;
-      top: 200px;
+      top: 220px;
       left: -1px;
       width: 3px;
       height: 101px;
-      background-color: rgba(255, 255, 255, 1);
+      background-color: $_body_bg_color;
     }
     .white-box::after {
       content: '';
       position: absolute;
-      top: -156px;
+      top: -140px;
       right: -1px;
       width: 3px;
       height: 294px;
-      background-color: rgba(255, 255, 255, 1);
+      background-color: $_body_bg_color;
     }
   }
   .title-wrapper {
@@ -103,20 +103,20 @@
       }
     }
   }
-  .slider {
-    // width: 288px;
-    // height: 512px;
-    background-color: inherit;
-    margin-bottom: 40px;
-    @media (min-width: 1440px) {
-      & {
-        border: 1px solid #000;
-        width: 1010px;
-        margin-left: 4px;
-        margin-right: auto;
-      }
-    }
-  }
+  // .slider {
+  // width: 288px;
+  // height: 512px;
+  // background-color: inherit;
+  // margin-bottom: 40px;
+  // @media (min-width: 1440px) {
+  //   & {
+  //     border: 1px solid #000;
+  //     width: 1010px;
+  //     margin-left: 4px;
+  //     margin-right: auto;
+  //   }
+  // }
+  // }
   .reviews-btn {
     width: 56px;
     height: 56px;
@@ -125,6 +125,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    // @media (min-width: 1440px) {
+    //   & {
+    //     position: relative;
+    //     left: 500px;
+    //     bottom: 100px;
+    //   }
+    // }
     .arrow-btn {
       border: none;
       background-color: inherit;
@@ -145,6 +152,9 @@
       & {
         width: 88px;
         height: 88px;
+        position: relative;
+        // left: 500px;
+        // bottom: 100px;
       }
     }
   }
@@ -159,33 +169,28 @@
 // -------------------------------------
 
 .slider {
+  // border: 1px solid #000;
+
   width: 288px;
   height: 528px;
   padding-top: 8px;
   position: relative;
   margin-bottom: 40px;
-
   overflow: hidden;
   background-color: inherit;
   @media (min-width: 1440px) {
-    .slider {
-      width: 1010px;
-      height: 530px;
-      margin-left: 4px;
-      margin-right: auto;
+    & {
+      display: none;
     }
   }
   .slider-wrapper {
     position: relative;
-    top: 50px;
-    left: 20px;
     display: flex;
     row-gap: 16px;
     flex-direction: column;
     justify-content: flex-start;
-    // transition: transform 0.5s ease;
     .slider-item {
-      border: 1px solid #000;
+      // border: 1px solid #000;
 
       position: relative;
       width: 288px;
@@ -199,8 +204,8 @@
       background-size: cover;
       @media (min-width: 1440px) {
         & {
-          width: 288px;
-          height: 160px;
+          width: 504px;
+          height: 272px;
         }
       }
     }
@@ -218,6 +223,77 @@
     }
   }
 }
+
+.line-slider {
+  display: none;
+  @media (min-width: 1440px) {
+    & {
+      display: block;
+      margin-left: 2px;
+      margin-right: auto;
+      padding-top: 80px;
+    }
+  }
+  .line-slider-wrapper {
+    // border: 1px solid #000;
+
+    position: relative;
+    display: flex;
+    width: 1060px;
+    height: 530px;
+    margin-left: 4px;
+    margin-right: auto;
+    overflow: hidden;
+    .line-slider-item {
+      // border: 1px solid #000;
+      width: 504px;
+      height: 272px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 60px;
+      background-position: center;
+      background-size: cover;
+
+      position: absolute;
+      top: 0;
+      right: 300px;
+    }
+    .cloud-title {
+      font-size: 24px;
+    }
+    .cloud-content {
+      display: none;
+    }
+    .text-active h4 {
+      display: none;
+    }
+    .text-active p {
+      display: flex;
+    }
+    .right-cloud {
+      top: 110px;
+      right: 2px;
+      z-index: 3;
+    }
+
+    .center-cloud {
+      top: 210px;
+      right: 252px;
+      z-index: 4;
+    }
+
+    .left-cloud {
+      top: 70px;
+      left: 2px;
+      z-index: 3;
+    }
+  }
+}
+
+// ===============================================================
+
+// ===============================================================
 
 .slide-1 {
   background-image: url('./../img/reviews/cloud-pink.png');
