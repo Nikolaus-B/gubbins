@@ -59,7 +59,10 @@
 }
 
 .benefit-item {
+  position: relative;
   padding: 44px 24px;
+
+  border: 1px solid $_primary_greey_color;
 
   transition: box-shadow 0.3s ease;
 
@@ -88,7 +91,6 @@
   }
   @media screen and (min-width: 1440px) {
     width: 504px;
-    border: 1px solid $_primary_greey_color;
 
     &.pink {
       padding: 74px 40px;
@@ -148,5 +150,75 @@
   @media screen and (min-width: 1440px) {
     font-size: 88px;
     line-height: 96px;
+  }
+}
+
+.benefit-like-icon {
+  position: absolute;
+
+  width: 80px;
+  height: 56px;
+
+  right: 12px;
+  top: -12px;
+
+  @media screen and (min-width: 1440px) {
+    width: 160px;
+    height: 110px;
+
+    right: 80px;
+    top: -90px;
+  }
+}
+
+.benefit-fire-icon {
+  position: absolute;
+
+  @media screen and (max-width: 1439px) {
+    &.desctop {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    &.mobile {
+      display: none;
+    }
+  }
+
+  &.mobile {
+    left: 16px;
+    top: -9px;
+
+    width: 32px;
+    height: 60px;
+  }
+
+  &.desctop {
+    left: -48px;
+    top: 25%;
+
+    width: 64px;
+    height: 120px;
+  }
+}
+
+.benefit-lines-icon {
+  position: absolute;
+  width: 70px;
+  height: 65px;
+
+  bottom: -35px;
+
+  @media screen and (max-width: 1439px) {
+    left: 11px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 140px;
+    height: 130px;
+
+    right: 23px;
+    bottom: -75px;
   }
 }
