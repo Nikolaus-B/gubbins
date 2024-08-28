@@ -188,9 +188,10 @@
   height: 100%;
 }
 
-.faq-item-image .faq-item-image-cross {
+.faq-item-image-cross {
   width: 20px;
   height: 18px;
+
   @media screen and (min-width: 1440px) {
     width: 36px;
     height: 33px;
