@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/gubbins/favicon.svg" />
+    <link rel="icon" href="/gubbins/assets/fav-icon-2be76184.svg" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GUBBINS</title>
     <link
@@ -10,9 +10,9 @@
       rel="stylesheet"
     />
     
-    <script type="module" crossorigin src="/gubbins/assets/index-abf2d82a.js"></script>
-    <link rel="modulepreload" crossorigin href="/gubbins/assets/modal-f323afa7.js">
-    <link rel="stylesheet" href="/gubbins/assets/modal-9ba90a18.css">
+    <script type="module" crossorigin src="/gubbins/assets/index-25d07db2.js"></script>
+    <link rel="modulepreload" crossorigin href="/gubbins/assets/modal-d774c85e.js">
+    <link rel="stylesheet" href="/gubbins/assets/modal-678af522.css">
   </head>
   <body>
     <header class="header">
@@ -360,17 +360,58 @@
       <li class="benefit-item pink">
         <p class="benefit-text">Stars</p>
         <p class="benefit-number">4,8</p>
+        <picture class="benefit-fire-icon mobile">
+          <source
+            srcset="/gubbins/assets/benefits-fire-2x-39d145d2.png 2x"
+            media="(min-resolution: 2dppx)"
+          />
+          <img
+            src="/gubbins/assets/benefits-fire-1x-92820b2c.png"
+            alt="decorative image with message"
+          />
+        </picture>
       </li>
       <li class="benefit-item green">
         <p class="benefit-text">Downloads</p>
         <p class="benefit-number">50 000+</p>
+        <picture class="benefit-fire-icon desctop">
+          <source
+            srcset="/gubbins/assets/benefits-fire-2x-39d145d2.png 2x"
+            media="(min-resolution: 2dppx)"
+          />
+          <img
+            src="/gubbins/assets/benefits-fire-1x-92820b2c.png"
+            alt="decorative image with message"
+          />
+        </picture>
       </li>
+
       <li class="benefit-item yellow">
         <p class="benefit-text">Reviews</p>
         <p class="benefit-number">1000+</p>
+        <picture class="benefit-like-icon">
+          <source
+            srcset="/gubbins/assets/benefits-like-2x-ab69ace2.png 2x"
+            media="(min-resolution: 2dppx)"
+          />
+          <img
+            src="/gubbins/assets/benefits-like-1x-7609d353.png"
+            alt="decorative image with message"
+          />
+        </picture>
       </li>
       <li class="benefit-item single-text purple">
         <p class="benefit-text single-text">online / offline</p>
+        <picture class="benefit-lines-icon">
+          <source
+            srcset="/gubbins/assets/benefits-lines-2x-2228a992.png 2x"
+            media="(min-resolution: 2dppx)"
+          />
+          <img
+            src="data:image/png;base64,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"
+            alt="decorative image with message"
+          />
+        </picture>
       </li>
     </ul>
   </div>
@@ -592,6 +633,11 @@
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAA4CAYAAAD5Egh9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKHSURBVHgB7VhBlpNAEK0meU+SFaB78QTGE4g7d+YImROoJ4ieQG9gPMGMJzDZuZvcILj3KTvjQnrqVxpehjAz1YR5s8l/j9cNFL8/1d1VBUT3BNN2MXoSZVTSSzkpaVUUxZKOIY6iaGICc87dtGGX29J+5XbBg+TkQ8ykKZNeokuW1tbYpRgYM+HzbG+A90x+QVokSfIlTmIbx/F58x4G5esbuc8Hn38gLfiBjXtocsvgcy9yNorcA38UtrOaPIne3WQXVPauLegOsH8X7Ocz9A2ZOUTdRuwFkDPr0gl62xsxwKvmI1peSbNeiYtfsmngupS98bSVGIvekoXvPpMPrLiDaFCv8xrDWsHv4ow8we7IDfaYpYMJ7OyKSo9r+yXm7Z5Jp6T1wT3qCBdbNujz3MQ8T9f2QGfFQRDMhZQnvUkKdFLcUPusLZR2UtxQm7fZeCvWqJXByRMatYCXYq1aEUAe0KoF1IoRd1mtJIK71IoI0mJAUyG1dqnJ1GpiU5o30rG00NjrFZs6NK405ipil7kRwQptwaJTPNyFRfbvmpTQEVt9Fvcj7gAd8X/K0Ugd1zdQJbnSKtPY69cxGcngrPrTTdXPdXslZEsbLnMN184oc6191ZY5KqgVgwRkTJozOQr0S0S7o4kdeV6TcwXkyKdHE++Rv+DQCZ/D18+pb7TVbCeccMJDYkCeQEQbjUebcBT+2/7d/mjci8IwfM3Hdki+CAiFy0Hwcf86vqOLaqm3ZOp+oEhmwUePP3FJ3+RhMtMqRUWPJSanLk7j6BaPqw/0qqzlLL4raIxdkPvt4z15QPgoXPHrzribjUfj1Ab2J8bEW9DOxxfHfOdNkbElue6D3YH0dQW7ARS2TqnLFAAAAABJRU5ErkJggg=="
             alt=""
           />
+          <img
+            class="faq-item-image-cross visually-hidden"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAjCAYAAAAXMhMjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHVSURBVHgBzZjNVcJAEMcneDBymgQLSAlagXSAHWgHYgXQAXYAVsCzAvTmjRK0A+IpeNk4s240jxdg2Uw2+b8XwiE7/LLzuQAiXvEFHVSPP4IgWHYVEPASh1EcbboLiHhPgB90T6CL8gFItm+dPUQLx00BMpQJnwRcFcfxRBqQbRmb9eNaGtDYmoCUNGAUrckoQg2RnSnGOAdp1QXkBKD1zSUZvfXMBbAUZzfQpAhugRGuTllDuz4XjbNDYkD+QZtnabfH7E7wKRtA484NttFtjgGa+PTjzj0AlYC6bJwYm42IAelaFlncqjurZAB1mTFl4wG6JNPqNtJdoAcCUko98z2AYCjpUhG4oBescpWPCW7B3zsTc7vZWZoH2x3592WnHiq52VOXgLZkykhlsdXgv9PIFHwLB3TeONI7NeAgWpmXSMAL2P8olNg87zpVn4GD+v3+jLLzNU3TF5vnsyx7C8/DL8rkZXgRfm+z7Ts0ocKdLpNxEYdmzktAUqUWNYIa+nPzAO9ASmT0SapF7exipResOwS7M8/zESh4BAFRvH6SvWsFKqVYXDu7uemDiv4bxLUmHiq2Uiq5eWa9iHsnz2vgQTrhaCNsD1HATd33lEFJN2HQH35SlAL3rQlRAAAAAElFTkSuQmCC"
+            alt="decorative image with message"
+          />
         </div>
         <div class="faq-item-content visually-hidden">
           <p class="faq-item-content-text">
@@ -609,6 +655,11 @@
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAA4CAYAAAD5Egh9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKHSURBVHgB7VhBlpNAEK0meU+SFaB78QTGE4g7d+YImROoJ4ieQG9gPMGMJzDZuZvcILj3KTvjQnrqVxpehjAz1YR5s8l/j9cNFL8/1d1VBUT3BNN2MXoSZVTSSzkpaVUUxZKOIY6iaGICc87dtGGX29J+5XbBg+TkQ8ykKZNeokuW1tbYpRgYM+HzbG+A90x+QVokSfIlTmIbx/F58x4G5esbuc8Hn38gLfiBjXtocsvgcy9yNorcA38UtrOaPIne3WQXVPauLegOsH8X7Ocz9A2ZOUTdRuwFkDPr0gl62xsxwKvmI1peSbNeiYtfsmngupS98bSVGIvekoXvPpMPrLiDaFCv8xrDWsHv4ow8we7IDfaYpYMJ7OyKSo9r+yXm7Z5Jp6T1wT3qCBdbNujz3MQ8T9f2QGfFQRDMhZQnvUkKdFLcUPusLZR2UtxQm7fZeCvWqJXByRMatYCXYq1aEUAe0KoF1IoRd1mtJIK71IoI0mJAUyG1dqnJ1GpiU5o30rG00NjrFZs6NK405ipil7kRwQptwaJTPNyFRfbvmpTQEVt9Fvcj7gAd8X/K0Ugd1zdQJbnSKtPY69cxGcngrPrTTdXPdXslZEsbLnMN184oc6191ZY5KqgVgwRkTJozOQr0S0S7o4kdeV6TcwXkyKdHE++Rv+DQCZ/D18+pb7TVbCeccMJDYkCeQEQbjUebcBT+2/7d/mjci8IwfM3Hdki+CAiFy0Hwcf86vqOLaqm3ZOp+oEhmwUePP3FJ3+RhMtMqRUWPJSanLk7j6BaPqw/0qqzlLL4raIxdkPvt4z15QPgoXPHrzribjUfj1Ab2J8bEW9DOxxfHfOdNkbElue6D3YH0dQW7ARS2TqnLFAAAAABJRU5ErkJggg=="
             alt=""
           />
+          <img
+            class="faq-item-image-cross visually-hidden"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAjCAYAAAAXMhMjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHVSURBVHgBzZjNVcJAEMcneDBymgQLSAlagXSAHWgHYgXQAXYAVsCzAvTmjRK0A+IpeNk4s240jxdg2Uw2+b8XwiE7/LLzuQAiXvEFHVSPP4IgWHYVEPASh1EcbboLiHhPgB90T6CL8gFItm+dPUQLx00BMpQJnwRcFcfxRBqQbRmb9eNaGtDYmoCUNGAUrckoQg2RnSnGOAdp1QXkBKD1zSUZvfXMBbAUZzfQpAhugRGuTllDuz4XjbNDYkD+QZtnabfH7E7wKRtA484NttFtjgGa+PTjzj0AlYC6bJwYm42IAelaFlncqjurZAB1mTFl4wG6JNPqNtJdoAcCUko98z2AYCjpUhG4oBescpWPCW7B3zsTc7vZWZoH2x3592WnHiq52VOXgLZkykhlsdXgv9PIFHwLB3TeONI7NeAgWpmXSMAL2P8olNg87zpVn4GD+v3+jLLzNU3TF5vnsyx7C8/DL8rkZXgRfm+z7Ts0ocKdLpNxEYdmzktAUqUWNYIa+nPzAO9ASmT0SapF7exipResOwS7M8/zESh4BAFRvH6SvWsFKqVYXDu7uemDiv4bxLUmHiq2Uiq5eWa9iHsnz2vgQTrhaCNsD1HATd33lEFJN2HQH35SlAL3rQlRAAAAAElFTkSuQmCC"
+            alt="decorative image with message"
+          />
         </div>
         <div class="faq-item-content visually-hidden">
           <p class="faq-item-content-text">
@@ -623,6 +674,11 @@
             class="faq-item-image"
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAA4CAYAAAD5Egh9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKHSURBVHgB7VhBlpNAEK0meU+SFaB78QTGE4g7d+YImROoJ4ieQG9gPMGMJzDZuZvcILj3KTvjQnrqVxpehjAz1YR5s8l/j9cNFL8/1d1VBUT3BNN2MXoSZVTSSzkpaVUUxZKOIY6iaGICc87dtGGX29J+5XbBg+TkQ8ykKZNeokuW1tbYpRgYM+HzbG+A90x+QVokSfIlTmIbx/F58x4G5esbuc8Hn38gLfiBjXtocsvgcy9yNorcA38UtrOaPIne3WQXVPauLegOsH8X7Ocz9A2ZOUTdRuwFkDPr0gl62xsxwKvmI1peSbNeiYtfsmngupS98bSVGIvekoXvPpMPrLiDaFCv8xrDWsHv4ow8we7IDfaYpYMJ7OyKSo9r+yXm7Z5Jp6T1wT3qCBdbNujz3MQ8T9f2QGfFQRDMhZQnvUkKdFLcUPusLZR2UtxQm7fZeCvWqJXByRMatYCXYq1aEUAe0KoF1IoRd1mtJIK71IoI0mJAUyG1dqnJ1GpiU5o30rG00NjrFZs6NK405ipil7kRwQptwaJTPNyFRfbvmpTQEVt9Fvcj7gAd8X/K0Ugd1zdQJbnSKtPY69cxGcngrPrTTdXPdXslZEsbLnMN184oc6191ZY5KqgVgwRkTJozOQr0S0S7o4kdeV6TcwXkyKdHE++Rv+DQCZ/D18+pb7TVbCeccMJDYkCeQEQbjUebcBT+2/7d/mjci8IwfM3Hdki+CAiFy0Hwcf86vqOLaqm3ZOp+oEhmwUePP3FJ3+RhMtMqRUWPJSanLk7j6BaPqw/0qqzlLL4raIxdkPvt4z15QPgoXPHrzribjUfj1Ab2J8bEW9DOxxfHfOdNkbElue6D3YH0dQW7ARS2TqnLFAAAAABJRU5ErkJggg=="
             alt=""
+          />
+          <img
+            class="faq-item-image-cross visually-hidden"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAjCAYAAAAXMhMjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHVSURBVHgBzZjNVcJAEMcneDBymgQLSAlagXSAHWgHYgXQAXYAVsCzAvTmjRK0A+IpeNk4s240jxdg2Uw2+b8XwiE7/LLzuQAiXvEFHVSPP4IgWHYVEPASh1EcbboLiHhPgB90T6CL8gFItm+dPUQLx00BMpQJnwRcFcfxRBqQbRmb9eNaGtDYmoCUNGAUrckoQg2RnSnGOAdp1QXkBKD1zSUZvfXMBbAUZzfQpAhugRGuTllDuz4XjbNDYkD+QZtnabfH7E7wKRtA484NttFtjgGa+PTjzj0AlYC6bJwYm42IAelaFlncqjurZAB1mTFl4wG6JNPqNtJdoAcCUko98z2AYCjpUhG4oBescpWPCW7B3zsTc7vZWZoH2x3592WnHiq52VOXgLZkykhlsdXgv9PIFHwLB3TeONI7NeAgWpmXSMAL2P8olNg87zpVn4GD+v3+jLLzNU3TF5vnsyx7C8/DL8rkZXgRfm+z7Ts0ocKdLpNxEYdmzktAUqUWNYIa+nPzAO9ASmT0SapF7exipResOwS7M8/zESh4BAFRvH6SvWsFKqVYXDu7uemDiv4bxLUmHiq2Uiq5eWa9iHsnz2vgQTrhaCNsD1HATd33lEFJN2HQH35SlAL3rQlRAAAAAElFTkSuQmCC"
+            alt="decorative image with message"
           />
         </div>
         <div class="faq-item-content visually-hidden">
@@ -639,6 +695,11 @@
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAA4CAYAAAD5Egh9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKHSURBVHgB7VhBlpNAEK0meU+SFaB78QTGE4g7d+YImROoJ4ieQG9gPMGMJzDZuZvcILj3KTvjQnrqVxpehjAz1YR5s8l/j9cNFL8/1d1VBUT3BNN2MXoSZVTSSzkpaVUUxZKOIY6iaGICc87dtGGX29J+5XbBg+TkQ8ykKZNeokuW1tbYpRgYM+HzbG+A90x+QVokSfIlTmIbx/F58x4G5esbuc8Hn38gLfiBjXtocsvgcy9yNorcA38UtrOaPIne3WQXVPauLegOsH8X7Ocz9A2ZOUTdRuwFkDPr0gl62xsxwKvmI1peSbNeiYtfsmngupS98bSVGIvekoXvPpMPrLiDaFCv8xrDWsHv4ow8we7IDfaYpYMJ7OyKSo9r+yXm7Z5Jp6T1wT3qCBdbNujz3MQ8T9f2QGfFQRDMhZQnvUkKdFLcUPusLZR2UtxQm7fZeCvWqJXByRMatYCXYq1aEUAe0KoF1IoRd1mtJIK71IoI0mJAUyG1dqnJ1GpiU5o30rG00NjrFZs6NK405ipil7kRwQptwaJTPNyFRfbvmpTQEVt9Fvcj7gAd8X/K0Ugd1zdQJbnSKtPY69cxGcngrPrTTdXPdXslZEsbLnMN184oc6191ZY5KqgVgwRkTJozOQr0S0S7o4kdeV6TcwXkyKdHE++Rv+DQCZ/D18+pb7TVbCeccMJDYkCeQEQbjUebcBT+2/7d/mjci8IwfM3Hdki+CAiFy0Hwcf86vqOLaqm3ZOp+oEhmwUePP3FJ3+RhMtMqRUWPJSanLk7j6BaPqw/0qqzlLL4raIxdkPvt4z15QPgoXPHrzribjUfj1Ab2J8bEW9DOxxfHfOdNkbElue6D3YH0dQW7ARS2TqnLFAAAAABJRU5ErkJggg=="
             alt=""
           />
+          <img
+            class="faq-item-image-cross visually-hidden"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAjCAYAAAAXMhMjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHVSURBVHgBzZjNVcJAEMcneDBymgQLSAlagXSAHWgHYgXQAXYAVsCzAvTmjRK0A+IpeNk4s240jxdg2Uw2+b8XwiE7/LLzuQAiXvEFHVSPP4IgWHYVEPASh1EcbboLiHhPgB90T6CL8gFItm+dPUQLx00BMpQJnwRcFcfxRBqQbRmb9eNaGtDYmoCUNGAUrckoQg2RnSnGOAdp1QXkBKD1zSUZvfXMBbAUZzfQpAhugRGuTllDuz4XjbNDYkD+QZtnabfH7E7wKRtA484NttFtjgGa+PTjzj0AlYC6bJwYm42IAelaFlncqjurZAB1mTFl4wG6JNPqNtJdoAcCUko98z2AYCjpUhG4oBescpWPCW7B3zsTc7vZWZoH2x3592WnHiq52VOXgLZkykhlsdXgv9PIFHwLB3TeONI7NeAgWpmXSMAL2P8olNg87zpVn4GD+v3+jLLzNU3TF5vnsyx7C8/DL8rkZXgRfm+z7Ts0ocKdLpNxEYdmzktAUqUWNYIa+nPzAO9ASmT0SapF7exipResOwS7M8/zESh4BAFRvH6SvWsFKqVYXDu7uemDiv4bxLUmHiq2Uiq5eWa9iHsnz2vgQTrhaCNsD1HATd33lEFJN2HQH35SlAL3rQlRAAAAAElFTkSuQmCC"
+            alt="decorative image with message"
+          />
         </div>
         <div class="faq-item-content visually-hidden">
           <p class="faq-item-content-text">
@@ -654,6 +715,11 @@
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAA4CAYAAAD5Egh9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKHSURBVHgB7VhBlpNAEK0meU+SFaB78QTGE4g7d+YImROoJ4ieQG9gPMGMJzDZuZvcILj3KTvjQnrqVxpehjAz1YR5s8l/j9cNFL8/1d1VBUT3BNN2MXoSZVTSSzkpaVUUxZKOIY6iaGICc87dtGGX29J+5XbBg+TkQ8ykKZNeokuW1tbYpRgYM+HzbG+A90x+QVokSfIlTmIbx/F58x4G5esbuc8Hn38gLfiBjXtocsvgcy9yNorcA38UtrOaPIne3WQXVPauLegOsH8X7Ocz9A2ZOUTdRuwFkDPr0gl62xsxwKvmI1peSbNeiYtfsmngupS98bSVGIvekoXvPpMPrLiDaFCv8xrDWsHv4ow8we7IDfaYpYMJ7OyKSo9r+yXm7Z5Jp6T1wT3qCBdbNujz3MQ8T9f2QGfFQRDMhZQnvUkKdFLcUPusLZR2UtxQm7fZeCvWqJXByRMatYCXYq1aEUAe0KoF1IoRd1mtJIK71IoI0mJAUyG1dqnJ1GpiU5o30rG00NjrFZs6NK405ipil7kRwQptwaJTPNyFRfbvmpTQEVt9Fvcj7gAd8X/K0Ugd1zdQJbnSKtPY69cxGcngrPrTTdXPdXslZEsbLnMN184oc6191ZY5KqgVgwRkTJozOQr0S0S7o4kdeV6TcwXkyKdHE++Rv+DQCZ/D18+pb7TVbCeccMJDYkCeQEQbjUebcBT+2/7d/mjci8IwfM3Hdki+CAiFy0Hwcf86vqOLaqm3ZOp+oEhmwUePP3FJ3+RhMtMqRUWPJSanLk7j6BaPqw/0qqzlLL4raIxdkPvt4z15QPgoXPHrzribjUfj1Ab2J8bEW9DOxxfHfOdNkbElue6D3YH0dQW7ARS2TqnLFAAAAABJRU5ErkJggg=="
             alt=""
           />
+          <img
+            class="faq-item-image-cross visually-hidden"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAjCAYAAAAXMhMjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHVSURBVHgBzZjNVcJAEMcneDBymgQLSAlagXSAHWgHYgXQAXYAVsCzAvTmjRK0A+IpeNk4s240jxdg2Uw2+b8XwiE7/LLzuQAiXvEFHVSPP4IgWHYVEPASh1EcbboLiHhPgB90T6CL8gFItm+dPUQLx00BMpQJnwRcFcfxRBqQbRmb9eNaGtDYmoCUNGAUrckoQg2RnSnGOAdp1QXkBKD1zSUZvfXMBbAUZzfQpAhugRGuTllDuz4XjbNDYkD+QZtnabfH7E7wKRtA484NttFtjgGa+PTjzj0AlYC6bJwYm42IAelaFlncqjurZAB1mTFl4wG6JNPqNtJdoAcCUko98z2AYCjpUhG4oBescpWPCW7B3zsTc7vZWZoH2x3592WnHiq52VOXgLZkykhlsdXgv9PIFHwLB3TeONI7NeAgWpmXSMAL2P8olNg87zpVn4GD+v3+jLLzNU3TF5vnsyx7C8/DL8rkZXgRfm+z7Ts0ocKdLpNxEYdmzktAUqUWNYIa+nPzAO9ASmT0SapF7exipResOwS7M8/zESh4BAFRvH6SvWsFKqVYXDu7uemDiv4bxLUmHiq2Uiq5eWa9iHsnz2vgQTrhaCNsD1HATd33lEFJN2HQH35SlAL3rQlRAAAAAElFTkSuQmCC"
+            alt="decorative image with message"
+          />
         </div>
         <div class="faq-item-content visually-hidden">
           <p class="faq-item-content-text">
@@ -663,13 +729,18 @@
       </li>
       <li class="faq-item">
         <p class="faq-item-text">Can I play Gubbins on multiple devices?</p>
-        <div class="faq-item-icon-container">
+        <button class="faq-item-icon-container">
           <img
             class="faq-item-image"
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAA4CAYAAAD5Egh9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKHSURBVHgB7VhBlpNAEK0meU+SFaB78QTGE4g7d+YImROoJ4ieQG9gPMGMJzDZuZvcILj3KTvjQnrqVxpehjAz1YR5s8l/j9cNFL8/1d1VBUT3BNN2MXoSZVTSSzkpaVUUxZKOIY6iaGICc87dtGGX29J+5XbBg+TkQ8ykKZNeokuW1tbYpRgYM+HzbG+A90x+QVokSfIlTmIbx/F58x4G5esbuc8Hn38gLfiBjXtocsvgcy9yNorcA38UtrOaPIne3WQXVPauLegOsH8X7Ocz9A2ZOUTdRuwFkDPr0gl62xsxwKvmI1peSbNeiYtfsmngupS98bSVGIvekoXvPpMPrLiDaFCv8xrDWsHv4ow8we7IDfaYpYMJ7OyKSo9r+yXm7Z5Jp6T1wT3qCBdbNujz3MQ8T9f2QGfFQRDMhZQnvUkKdFLcUPusLZR2UtxQm7fZeCvWqJXByRMatYCXYq1aEUAe0KoF1IoRd1mtJIK71IoI0mJAUyG1dqnJ1GpiU5o30rG00NjrFZs6NK405ipil7kRwQptwaJTPNyFRfbvmpTQEVt9Fvcj7gAd8X/K0Ugd1zdQJbnSKtPY69cxGcngrPrTTdXPdXslZEsbLnMN184oc6191ZY5KqgVgwRkTJozOQr0S0S7o4kdeV6TcwXkyKdHE++Rv+DQCZ/D18+pb7TVbCeccMJDYkCeQEQbjUebcBT+2/7d/mjci8IwfM3Hdki+CAiFy0Hwcf86vqOLaqm3ZOp+oEhmwUePP3FJ3+RhMtMqRUWPJSanLk7j6BaPqw/0qqzlLL4raIxdkPvt4z15QPgoXPHrzribjUfj1Ab2J8bEW9DOxxfHfOdNkbElue6D3YH0dQW7ARS2TqnLFAAAAABJRU5ErkJggg=="
             alt=""
           />
-        </div>
+          <img
+            class="faq-item-image-cross visually-hidden"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAjCAYAAAAXMhMjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHVSURBVHgBzZjNVcJAEMcneDBymgQLSAlagXSAHWgHYgXQAXYAVsCzAvTmjRK0A+IpeNk4s240jxdg2Uw2+b8XwiE7/LLzuQAiXvEFHVSPP4IgWHYVEPASh1EcbboLiHhPgB90T6CL8gFItm+dPUQLx00BMpQJnwRcFcfxRBqQbRmb9eNaGtDYmoCUNGAUrckoQg2RnSnGOAdp1QXkBKD1zSUZvfXMBbAUZzfQpAhugRGuTllDuz4XjbNDYkD+QZtnabfH7E7wKRtA484NttFtjgGa+PTjzj0AlYC6bJwYm42IAelaFlncqjurZAB1mTFl4wG6JNPqNtJdoAcCUko98z2AYCjpUhG4oBescpWPCW7B3zsTc7vZWZoH2x3592WnHiq52VOXgLZkykhlsdXgv9PIFHwLB3TeONI7NeAgWpmXSMAL2P8olNg87zpVn4GD+v3+jLLzNU3TF5vnsyx7C8/DL8rkZXgRfm+z7Ts0ocKdLpNxEYdmzktAUqUWNYIa+nPzAO9ASmT0SapF7exipResOwS7M8/zESh4BAFRvH6SvWsFKqVYXDu7uemDiv4bxLUmHiq2Uiq5eWa9iHsnz2vgQTrhaCNsD1HATd33lEFJN2HQH35SlAL3rQlRAAAAAElFTkSuQmCC"
+            alt="decorative image with message"
+          />
+        </button>
         <div class="faq-item-content visually-hidden">
           <p class="faq-item-content-text">
             Yes, you can sync your game across devices using your account.
