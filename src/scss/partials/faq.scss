@@ -8,10 +8,12 @@
   display: flex;
   gap: 16px;
   margin-bottom: 16px;
-  padding-top: 72px;
+  // padding-top: 72px;
+  padding-top: 112px;
 
   @media screen and (min-width: 1440px) {
-    padding-top: 104px;
+    // padding-top: 104px;
+    padding-top: 164px;
     margin-bottom: 40px;
   }
 }

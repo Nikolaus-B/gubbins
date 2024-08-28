@@ -1,6 +1,8 @@
 .benefits-container {
-  padding-top: 72px;
-  padding-bottom: 72px;
+  // padding-top: 72px;
+  // padding-bottom: 72px;
+  padding-top: 112px;
+  padding-bottom: 32px;
 
   @media screen and (min-width: 1440px) {
     display: flex;
@@ -8,8 +10,10 @@
 
     gap: 120px;
 
-    padding-top: 104px;
-    padding-bottom: 104px;
+    // padding-top: 104px;
+    // padding-bottom: 104px;
+    padding-top: 164px;
+    padding-bottom: 44px;
 
     border-right: 1px solid $_primary_greey_color;
     border-left: 1px solid $_primary_greey_color;
