@@ -1,6 +1,3 @@
-import questionMark from '../img/faq/question-mark.png';
-import cross from '../img/faq/cross.png';
-
 document.querySelectorAll('.faq-item').forEach(function (item) {
   item
     .querySelector('.faq-item-icon-container')
@@ -12,7 +9,12 @@ document.querySelectorAll('.faq-item').forEach(function (item) {
         item
           .querySelector('.faq-item-content')
           .classList.add('visually-hidden');
-        item.querySelector('.faq-item-image').src = questionMark;
+        item
+          .querySelector('.faq-item-image')
+          .classList.remove('visually-hidden');
+        item
+          .querySelector('.faq-item-image-cross')
+          .classList.add('visually-hidden');
         return;
       }
 
@@ -22,12 +24,20 @@ document.querySelectorAll('.faq-item').forEach(function (item) {
           otherItem
             .querySelector('.faq-item-content')
             .classList.add('visually-hidden');
-          otherItem.querySelector('.faq-item-image').src = questionMark;
+          otherItem
+            .querySelector('.faq-item-image')
+            .classList.remove('visually-hidden');
+          otherItem
+            .querySelector('.faq-item-image-cross')
+            .classList.add('visually-hidden');
         }
       });
 
       item.classList.add('open');
-      item.querySelector('.faq-item-image').src = cross;
+      item.querySelector('.faq-item-image').classList.add('visually-hidden');
+      item
+        .querySelector('.faq-item-image-cross')
+        .classList.remove('visually-hidden');
       setTimeout(() => {
         item
           .querySelector('.faq-item-content')
