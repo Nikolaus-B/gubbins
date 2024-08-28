@@ -10,8 +10,9 @@
       rel="stylesheet"
     />
     
-    <script type="module" crossorigin src="/gubbins/assets/main-e0886e1c.js"></script>
-    <link rel="stylesheet" href="/gubbins/assets/main-69d904ff.css">
+    <script type="module" crossorigin src="/gubbins/assets/index-c42e6f83.js"></script>
+    <link rel="modulepreload" crossorigin href="/gubbins/assets/modal-b52df760.js">
+    <link rel="stylesheet" href="/gubbins/assets/modal-b7616972.css">
   </head>
   <body>
     <header class="header">
@@ -19,7 +20,7 @@
     <div class="header-container">
       <div class="logo-container">
         <div class="logo">
-          <a href="#hero">
+          <a href="./index.html#hero">
             <picture>
               <source
                 srcset="/gubbins/assets/logo-desctop-99b51b08.png 1x, /gubbins/assets/logo-desctop-2x-430d4aca.png 2x"
@@ -40,7 +41,7 @@
       </div>
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="nav-link" href="#reviews">Reviews</a>
+          <a class="nav-link" href="./index.html#reviews">Reviews</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="">About</a>
@@ -52,7 +53,7 @@
           <a class="nav-link" href="">Advantages</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#gallery">Gallery</a>
+          <a class="nav-link" href="./index.html#gallery">Gallery</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="">FAQ</a>
@@ -75,7 +76,7 @@
       </button>
       <ul class="nav-mobile-list">
         <li class="nav-item">
-          <a class="nav-link" href="#reviews">Reviews</a>
+          <a class="nav-link" href="./index.html#reviews">Reviews</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="">About</a>
@@ -87,7 +88,7 @@
           <a class="nav-link" href="">Advantages</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#gallery">Gallery</a>
+          <a class="nav-link" href="./index.html#gallery">Gallery</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="">FAQ</a>
@@ -101,7 +102,11 @@
     <section class="hero" id="hero">
   <div class="hero-wrapper">
     <div class="descriptions">
-      <h1 class="hero-title">GUBBINS</h1>
+      <h1 class="hero-title">
+        <span class="title-color-g">G</span><span class="title-color-u">U</span
+        ><span class="title-color-bb">BB</span
+        ><span class="title-color-ins">INS</span>
+      </h1>
       <div class="text-content">
         <p>
           Dive into the quirky world of Gubbins, where strategy meets fun in a
@@ -522,8 +527,8 @@
 
     <section id="gallery">
   <div class="gallery-wrapper">
-    <h2 class="gallery-title">Gallery</h2>
-    <ul class="gallery-list">
+    <h2 class="gallery-title grid-item-1">Gallery</h2>
+    <ul class="gallery-list grid-item-2">
       <li class="gallery-item gallery-active">
         <picture>
           <source
@@ -557,7 +562,7 @@
         </picture>
       </li>
     </ul>
-    <ul class="gallery-buttons">
+    <ul class="gallery-buttons grid-item-3">
       <li class="gallery-btn">1</li>
       <li class="gallery-btn">2</li>
       <li class="gallery-btn">3</li>
