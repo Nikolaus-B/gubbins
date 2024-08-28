@@ -16,15 +16,32 @@
       justify-content: space-between;
       padding-left: 104px;
       padding-right: 32px;
+      padding-bottom: 44px;
     }
   }
   .hero-title {
     margin-bottom: 24px;
-    font-size: 68px;
+    font-family: 'Margarine';
+    font-size: 72px;
+    line-height: 62px;
+    .title-color-g {
+      color: $_purple_text_color;
+    }
+    .title-color-u {
+      color: #bcb742;
+    }
+    .title-color-bb {
+      color: #9a9ed9;
+    }
+    .title-color-ins {
+      color: $_primary_green_color;
+    }
     @media (min-width: 1440px) {
       & {
         margin-bottom: 16px;
         padding-top: 48px;
+        line-height: 54px;
+        font-size: 82px;
       }
     }
   }
