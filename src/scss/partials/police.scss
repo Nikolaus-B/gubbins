@@ -11,6 +11,9 @@
   }
 }
 .police-wrapper {
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.02em;
   width: 288px;
   padding-top: 148px;
   margin-left: auto;
@@ -18,15 +21,23 @@
   padding-bottom: 72px;
   @media (min-width: 1440px) {
     & {
+      font-size: 16px;
+      line-height: 150%;
       padding-top: 180px;
       width: 1024px;
       padding-bottom: 104px;
     }
   }
   .police-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
     margin-bottom: 4px;
     @media (min-width: 1440px) {
       & {
+        font-size: 24px;
+        line-height: 133%;
         margin-bottom: 16px;
       }
     }
