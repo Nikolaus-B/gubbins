@@ -1,7 +1,9 @@
 .gallery-wrapper {
   width: 288px;
-  padding-top: 72px;
-  padding-bottom: 72px;
+  // padding-top: 72px;
+  // padding-bottom: 72px;
+  padding-top: 112px;
+  padding-bottom: 32px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -25,18 +27,24 @@
   }
   .gallery-title {
     margin-bottom: 40px;
-    text-align: end;
     grid-area: title;
     font-family: 'Margarine';
     font-size: 64px;
-    line-height: 72px;
+    line-height: 112%;
+    text-align: right;
     @media (min-width: 1440px) {
       & {
         text-align: start;
         margin-bottom: 64px;
         font-size: 80px;
-        line-height: 104px;
+        line-height: 130%;
       }
+    }
+    .gallery-color-g {
+      color: $_purple_title_color;
+    }
+    .gallery-color-ll {
+      color: $_primary_green_color;
     }
   }
   .gallery-list {
@@ -83,6 +91,7 @@
       cursor: pointer;
       @media (min-width: 1440px) {
         & {
+          font-size: 24px;
           width: 88px;
           height: 88px;
           padding: 28px 37px;

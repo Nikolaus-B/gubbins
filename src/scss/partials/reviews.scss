@@ -5,16 +5,15 @@
   flex-direction: column;
   align-items: center;
   width: 288px;
-  // padding-top: 72px;
   padding-top: 132px;
-  padding-bottom: 72px;
+  padding-bottom: 32px;
   margin-left: auto;
   margin-right: auto;
   @media (min-width: 1440px) {
     & {
       width: 1232px;
       padding-top: 164px;
-      padding-bottom: 44px;
+      padding-bottom: 4px;
     }
   }
   .title-wrapper {
@@ -28,11 +27,15 @@
     .reviews-title {
       font-family: 'Margarine';
       font-size: 64px;
-      line-height: 72px;
+      line-height: 112%;
+      color: $_purple_title_color;
       @media (min-width: 1440px) {
         font-size: 80px;
-        line-height: 104px;
+        line-height: 130%;
       }
+    }
+    .title-color {
+      color: $_primary_green_color;
     }
     .title-effect {
       position: absolute;
@@ -130,11 +133,7 @@
   height: 100%;
 }
 
-// -------------------------------------
-
 .slider {
-  // border: 1px solid #000;
-
   width: 288px;
   height: 528px;
   padding-top: 8px;
@@ -154,8 +153,6 @@
     flex-direction: column;
     justify-content: flex-start;
     .slider-item {
-      // border: 1px solid #000;
-
       position: relative;
       width: 288px;
       height: 160px;
@@ -174,9 +171,15 @@
       }
     }
     .cloud-title {
-      font-size: 24px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 120%;
+      letter-spacing: 0.02em;
     }
     .cloud-content {
+      font-size: 14px;
+      line-height: 143%;
+      letter-spacing: 0.02em;
       display: none;
     }
     .text-active h4 {
@@ -199,8 +202,6 @@
     }
   }
   .line-slider-wrapper {
-    // border: 1px solid #000;
-
     position: relative;
     display: flex;
     width: 1060px;
@@ -209,7 +210,6 @@
     margin-right: auto;
     overflow: hidden;
     .line-slider-item {
-      // border: 1px solid #000;
       width: 504px;
       height: 272px;
       display: flex;
@@ -225,12 +225,19 @@
     }
     .cloud-title {
       font-size: 24px;
+      font-weight: 500;
+      line-height: 133%;
     }
     .cloud-content {
+      font-size: 16px;
+      line-height: 150%;
       display: none;
     }
-    .text-active h4 {
-      display: none;
+    .text-active {
+      flex-direction: column-reverse;
+      row-gap: 8px;
+      align-items: flex-start;
+      padding-left: 110px;
     }
     .text-active p {
       display: flex;
@@ -254,10 +261,6 @@
     }
   }
 }
-
-// ===============================================================
-
-// ===============================================================
 
 .slide-1 {
   background-image: url('./../img/reviews/cloud-pink.png');

@@ -3,7 +3,6 @@
   background-color: $_main_bg_color;
   width: 288px;
   padding-top: 132px;
-  // padding-bottom: 72px;
   padding-bottom: 12px;
   margin-left: auto;
   margin-right: auto;
@@ -23,7 +22,15 @@
     margin-bottom: 24px;
     font-family: 'Margarine';
     font-size: 72px;
-    line-height: 62px;
+    line-height: 122%;
+    @media (min-width: 1440px) {
+      & {
+        margin-bottom: 16px;
+        padding-top: 28px;
+        line-height: 107%;
+        font-size: 112px;
+      }
+    }
     .title-color-g {
       color: $_purple_text_color;
     }
@@ -31,25 +38,21 @@
       color: #bcb742;
     }
     .title-color-bb {
-      color: #9a9ed9;
+      color: $_purple_title_color;
     }
     .title-color-ins {
       color: $_primary_green_color;
     }
-    @media (min-width: 1440px) {
-      & {
-        margin-bottom: 16px;
-        padding-top: 48px;
-        line-height: 54px;
-        font-size: 82px;
-      }
-    }
   }
   .text-content {
+    font-size: 14px;
+    line-height: 143%;
     width: 288px;
     margin-bottom: 16px;
     @media (min-width: 1440px) {
       & {
+        font-size: 16px;
+        line-height: 150%;
         width: 400px;
         margin-bottom: 40px;
       }
@@ -106,10 +109,12 @@
     @media (min-width: 1440px) {
       & {
         display: block;
+        width: 360px;
+        height: 300px;
         position: absolute;
         z-index: 3;
         left: 0;
-        bottom: -20px;
+        bottom: -36px;
       }
     }
   }
