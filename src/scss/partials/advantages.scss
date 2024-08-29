@@ -91,11 +91,17 @@
     @media screen and (min-width: 1440px) {
       flex-direction: column-reverse;
       align-items: flex-end;
-      margin-bottom: 66px;
+
+      width: 192px;
+      height: 216px;
+      margin-top: -45px;
+      margin-bottom: auto;
       margin-left: auto;
-      margin-right: -40px;
+      margin-right: 40px;
 
       grid-area: 3 / 2 / 4 / 3;
+
+      flex-wrap: nowrap;
     }
   }
 
@@ -167,6 +173,22 @@
       object-fit: contain;
     }
   }
+
+  &.picture {
+    @media screen and (min-width: 1440px) {
+      width: 80px;
+      height: 72px;
+    }
+  }
+
+  &.jar {
+    @media screen and (min-width: 1440px) {
+      display: block;
+      object-fit: cover;
+      width: 192px;
+      height: 160px;
+    }
+  }
 }
 
 .advantages-item-image {
@@ -192,6 +214,22 @@
     @media screen and (min-width: 1440px) {
       width: 88px;
       height: 96px;
+    }
+  }
+
+  &.picture {
+    @media screen and (min-width: 1440px) {
+      display: block;
+      width: 80px;
+      height: 72px;
+    }
+  }
+
+  &.jar {
+    @media screen and (min-width: 1440px) {
+      object-fit: cover;
+      width: 192px;
+      height: 160px;
     }
   }
 }
