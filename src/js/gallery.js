@@ -15,7 +15,10 @@ galleryButtons.addEventListener('click', event => {
     galleryItems.forEach(item => {
       item.classList.remove('gallery-active');
     });
-    // galleryBtn[0].classList.remove('btn-active');
     galleryItems[btnIndex].classList.add('gallery-active');
+    galleryBtn.forEach(item => {
+      item.classList.remove('gallery-btn-active');
+    });
+    galleryBtn[btnIndex].classList.add('gallery-btn-active');
   }
 });
